@@ -68,7 +68,6 @@ function randomQuotes() {
   const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
   quote.innerText = todayQuote.quote_e;
-  title.innerText = `- ${todayQuote.title} -`;
 }
 
 randomQuotes();
