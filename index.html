@@ -8,12 +8,15 @@
     <title>yuna</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <script defer src="js/background.js"></script>
     <script defer src="js/greetings.js"></script>
     <script defer src="js/clock.js"></script>
     <script defer src="js/weather.js"></script>
     <script defer src="js/quotes.js"></script>
+    <script defer src="js/todo.js"></script>
 
 </head>
 
@@ -27,23 +30,32 @@
     <!-- clock -->
     <p class="clock" id="clock">00:00:00</p>
 
-    <!-- login-->
-    <form  id="login-form" class="hidden">
-        <input type="text" name="login" class="input--text login" id="login" placeholder="What's your name?">
-    </form>
-    <input type="text" name="greeting" class="input--text greeting" id="greeting" class="hidden" readonly>
-
     <!-- quotes -->
     <div id="quote">
         <span></span>
         <span></span>
     </div>
 
+    <!-- login-->
+    <div class="login">
+        <form id="login-form" class="hidden">
+            <input type="text" name="login" class="input--text login" id="login" placeholder="What's your name?"
+                required>
+        </form>
+        <input type="text" name="greeting" class="input--text greeting hidden" id="greeting" readonly>
+    </div>
+
     <!-- todo -->
-    <form id="todo-form">
-        <input type="text" id="todo" class="input--text todo" placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
+    <div class="todo">
+        <form id="todo-form">
+            <input type="text" id="todo" class="input--text todo" placeholder="Write a To Do and Press Enter" />
+        </form>
+    </div>
+    <div class="todoList">
+        <ul id="todo-list">
+
+        </ul>
+    </div>
 </body>
 
 </html>
