@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Hi+Melody&family=Itim&display=swap");
 .hidden {
   display: none;
 }
@@ -9,10 +9,37 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  margin: 30px 0px;
+}
+
+/* Weather */
+#weather {
+  width: 150px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(220, 237, 221, 0.8);
+  font-family: "Baloo 2", cursive;
+  box-sizing: border-box;
+}
+
+#weather span {
+  color: #808e95;
+}
+
+/* quotes */
+#quote {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+  font-size: xx-large;
+  font-weight: 600;
+  color: #424242;
 }
 
 /* Clock */
-
 .clock {
   font-size: 90px;
   font-weight: 700;
@@ -20,6 +47,7 @@ body {
   color: #e3f2fd;
   display: flex;
   justify-content: center;
+  margin: 20px 0px;
 }
 
 /* login */
@@ -32,30 +60,60 @@ body {
   padding: 10px;
   color: antiquewhite;
   text-decoration: none;
-  font-family: "Prompt", sans-serif;
+  font-family: "Baloo 2", cursive;
   width: 300px;
 }
 
 .input--text::-webkit-input-placeholder {
-  color: #efebe9;
   text-align: center;
 }
 
 .input--text:focus {
   background-color: #c8e6c9;
+  color: black;
+  text-align: center;
+  font-family: "Hi Melody", cursive;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .greeting {
-  font-family: "Prompt", sans-serif;
   text-align: center;
   color: #9380ed;
 }
 
 /* todo */
+.todo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
 #todo-form #todo {
   font-size: 20px;
+  font-family: "Hi Melody", cursive;
 }
 
-#todo-form #todo:focus {
-  color: black;
+.todoList {
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #ffccbc;
+  width: 400px;
+}
+
+.todoList #todo-list {
+  list-style: none;
+  font-family: "Hi Melody", cursive;
+}
+.todoList #todo-list li {
+  padding: 10px 0px;
+  font-size: 20px;
+}
+.todoList #todo-list li button {
+  background: none;
+  border: none;
+  margin-left: 20px;
 }
