@@ -1,3 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+
 .hidden {
   display: none;
+}
+
+/* Background_Image */
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Clock */
+
+.clock {
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: #e3f2fd;
+  display: flex;
+  justify-content: center;
+}
+
+/* login */
+.input--text {
+  font-size: 30px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: #bbdefb;
+  outline: none;
+  padding: 10px;
+  color: antiquewhite;
+  text-decoration: none;
+  font-family: "Prompt", sans-serif;
+  width: 300px;
+}
+
+.input--text::-webkit-input-placeholder {
+  color: #efebe9;
+  text-align: center;
+}
+
+.input--text:focus {
+  background-color: #c8e6c9;
+}
+
+.greeting {
+  font-family: "Prompt", sans-serif;
+  text-align: center;
+  color: #9380ed;
+}
+
+/* todo */
+#todo-form #todo {
+  font-size: 20px;
+}
+
+#todo-form #todo:focus {
+  color: black;
 }
