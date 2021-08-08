@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Hi+Melody&family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
 .hidden {
   display: none;
 }
@@ -31,9 +33,10 @@ body {
 /* quotes */
 #quote {
   margin: 0 auto;
-  width: 800px;
+  width: 1000px;
   text-align: center;
-  font-family: "Baloo 2", cursive;
+  text-justify: auto;
+  font-family: "Poor Story", cursive;
   font-size: xx-large;
   font-weight: 600;
   color: #424242;
@@ -66,6 +69,7 @@ body {
 
 .input--text::-webkit-input-placeholder {
   text-align: center;
+  font-weight: 600;
 }
 
 .input--text:focus {
@@ -78,7 +82,7 @@ body {
 .login {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .greeting {
