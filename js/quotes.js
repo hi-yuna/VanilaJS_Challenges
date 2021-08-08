@@ -61,10 +61,15 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const title = document.querySelector("#quote span:last-child");
+function randomQuotes() {
+  const quote = document.querySelector("#quote span:first-child");
+  const title = document.querySelector("#quote span:last-child");
 
-const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todayQuote.quote_e;
-title.innerText = `- ${todayQuote.title} -`;
+  quote.innerText = todayQuote.quote_e;
+  title.innerText = `- ${todayQuote.title} -`;
+}
+
+randomQuotes();
+setInterval(randomQuotes, 5000);
