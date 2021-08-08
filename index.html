@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script defer src="js/greetings.js"></script>
-    <script defer src="js/clock.js"></script>
-    <script defer src="js/quotes.js"></script>
-    <script defer src="js/background.js"></script>
-    <script defer src="js/todo.js"></script>
-    <script defer src="js/weather.js"></script>
+    <title>yuna</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/background.js"></script>
+    <script defer src="js/greetings.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/quotes.js"></script>
+
 </head>
 
 <body>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?">
-        <input type="submit" value="Log In">
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text"placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
+    <!-- weather -->
     <div id="weather">
         <span></span>
         <span></span>
     </div>
+
+    <!-- clock -->
+    <p class="clock" id="clock">00:00:00</p>
+
+    <!-- login-->
+    <form  id="login-form" class="hidden">
+        <input type="text" name="login" class="input--text login" id="login" placeholder="What's your name?">
+    </form>
+    <input type="text" name="greeting" class="input--text greeting" id="greeting" class="hidden" readonly>
+
+    <!-- quotes -->
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- todo -->
+    <form id="todo-form">
+        <input type="text" id="todo" class="input--text todo" placeholder="Write a To Do and Press Enter" />
+    </form>
+    <ul id="todo-list"></ul>
 </body>
 
 </html>
